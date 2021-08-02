@@ -3,5 +3,17 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#   movies = Movie.create([{ title: 'Star Wars' }, { title: 'Lord of the Rings' }])
+#   Character.create(title: 'Luke', movie: movies.first)
+
+stories = [
+  { title: 'Mo', description: 'Hello World' },
+  { title: 'Fabien', description: 'Hello Python' },
+  { title: 'Brian', description: 'Hello JS' },
+  { title: 'Forrest', description: 'Hello Rails' }
+]
+
+stories.each do |story|
+
+  Story.create(story)
+end
